@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/indibg"
+    android:orientation="vertical"
+    tools:context=".IndividualItemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cakename_infopg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="CAKE NAME"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cakeimage_infopg"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="10dp"
+                android:src="@drawable/redvelvet" />
+
+            <ImageButton
+                android:id="@+id/minus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/cakeimage_infopg"
+                android:background="@drawable/baseline_remove_circle_24"
+                android:padding="5dp"
+                android:contentDescription="minus"/>
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/minus"
+                android:layout_marginVertical="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@id/cakeimage_infopg"
+                android:background="@color/teal"
+                android:gravity="center"
+                android:text=" 0 "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/plus"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/cakeimage_infopg"
+                android:layout_below="@+id/count"
+                android:background="@drawable/baseline_add_circle_24"
+                android:contentDescription="add"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/addons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingTop="50dp"
+            android:text="Add-Ons"
+            android:textColor="@color/purple"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkbox_whippedcream"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/addons"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Whipped Cream Frosting  -  Rs 10" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ganache"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_whippedcream"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Ganache   -  Rs 15" />
+
+        <CheckBox
+            android:id="@+id/checkbox_caramel"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_ganache"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Caramel Sauce   -  Rs 18" />
+
+        <CheckBox
+            android:id="@+id/checkbox_chocochips"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_caramel"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Choco Chips  -  Rs 5" />
+
+        <CheckBox
+            android:id="@+id/checkbox_whitechips"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_chocochips"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="White Chocolate Chips  -  Rs 6" />
+
+        <CheckBox
+            android:id="@+id/checkbox_sprinklers"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_whitechips"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Sprinklers  -  Rs 6" />
+
+        <CheckBox
+            android:id="@+id/checkbox_macarons"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_sprinklers"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Macarons   -  Rs 20" />
+
+        <CheckBox
+            android:id="@+id/checkbox_flowers"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/checkbox_macarons"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Edible Flowers  -  Rs 15" />
+
+        <Button
+            android:id="@+id/addbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/msg"
+            android:text="Add"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/priceinfo"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msg"
+            android:layout_toRightOf="@id/addbtn"
+            android:layout_marginLeft="20dp"
+            android:padding="20dp"
+            android:text="TOTAL COST = "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/checkbox_flowers"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ECB0F6"
+            android:hint="Type the message you want to display at the top of the cake."
+            android:padding="20dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/proccedtopay"
+            android:layout_width="600dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="Place Order >>"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#B05EBD"
+            android:textStyle="bold" />
+        </RelativeLayout>
+
+</LinearLayout>

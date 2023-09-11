@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Funday Bakery</string>
+
+    <string name="redvelvet">A scarlet masterpiece, blending heavenly cocoa flavors with a hint of tangy cream cheese frosting.</string>
+
+    <string name="chocolatefudge">A decadent delight, rich with layers of velvety chocolate goodness.</string>
+
+    <string name="lemondrizzle">A zesty sensation, boasting a moist sponge infused with tangy lemon syrup and topped with a delicate glaze.</string>
+
+    <string name="carrot">A wholesome indulgence, blending grated carrots, warm spices, and a luscious cream cheese frosting for a perfect balance of flavors.</string>
+
+    <string name="blackforest">A taste of enchantment, combining layers of moist chocolate sponge, cherry filling, and fluffy whipped cream, all crowned with chocolate shavings. </string>
+
+    <string name="strawberryshortcake">A summer symphony, featuring layers of light sponge cake, fresh strawberries, and a fluffy cloud of whipped cream.</string>
+
+    <string name="coffeemocha">A coffee lover\'s dream, melding rich, robust coffee flavors with smooth chocolate ganache for an irresistible treat.</string>
+
+    <string name="matchagreentea">An elegant fusion, harmonizing earthy matcha flavors with delicate layers of sponge cake, adorned with a dusting of powdered sugar.</string>
+
+    <string name="coconutcream">A tropical escape, transporting you to paradise with its moist coconut-infused cake layers and dreamy coconut cream frosting.</string>
+
+    <string name="funfetti">A burst of joy, speckled with colorful sprinkles throughout its soft vanilla cake, reminding you that every slice is a celebration.</string>
+
+</resources>
